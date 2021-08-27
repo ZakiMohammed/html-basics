@@ -1,0 +1,41 @@
+Git
+GitHub/BitBucket/GitLab
+Netlify
+
+---
+
+Git:
+	- Source Control
+	- It is use to manage the source of projects between teams
+	- Git Commands:
+		- init		- it initialize folder for git
+		- remote	- which remote repository current folder is pointing to
+		
+		Push:
+			- add		- files you want to add to current commit (for all use .)
+			- commit	- use to freeze current changes with a message and commit number
+			- push		- use to upload the changes to the git repository
+		
+		Pull:
+			- pull 		- it pull the latest changes from the server
+			
+		Clone:
+			- clone		- clones the server repository to your local machine
+	- Branches
+		- If there is no branch then only master branch exist
+	
+GitHub:
+	- GitHub, Inc. is a provider of Internet hosting for software development and version control using Git. 
+	- It offers the distributed version control and source code management functionality of Git, plus its own features.
+
+Initial Commands from GitHub:
+git init
+git remote add origin https://github.com/ZakiMohammed/second-app-app.git
+
+git add .
+git commit -m "first commit"
+git push -u origin master
+
+git pull
+
+git clone https://github.com/ZakiMohammed/second-app-app.git
