@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Forms</title>
+
+</head>
+<body>
+    
+    <h1>Forms Example</h1>
+
+    <form action="forms.html" method="POST" novalidate>
+        
+        <!-- text -->
+        <label for="txtFullName">Full Name</label>
+        <input type="text" name="fullName" id="txtFullName" placeholder="Enter Full Name" required>
+
+        <br>
+
+        <!-- password -->
+        <label for="txtPassword">Password</label>
+        <input type="password" name="password" id="txtPassword" placeholder="Enter Password" maxlength="6">
+
+        <br>
+
+        <!-- email -->
+        <label for="txtEmail">Email</label>
+        <input type="email" name="email" id="txtEmail" placeholder="Enter Email">
+
+        <br>
+
+        <!-- number -->
+        <label for="txtAge">Age</label>
+        <input type="number" name="age" id="txtAge" placeholder="Enter Age" min="18" max="60">
+
+        <br>
+
+        <!-- search -->
+        <label for="txtSearch">Search</label>
+        <input type="search" name="search" id="txtSearch" placeholder="Enter Search">
+
+        <br>
+
+        <!-- checkbox -->
+        <label>Subjects</label>
+
+        <input type="checkbox" name="math" id="chkMath" value="Math">
+        <label for="chkMath">Math</label>
+
+        <input type="checkbox" name="science" id="chkScience" value="Science" checked>
+        <label for="chkScience">Science</label>
+
+        <input type="checkbox" name="history" id="chkHistory" value="History" checked disabled>
+        <label for="chkHistory">History</label>
+
+        <br>
+
+        <!-- radio -->
+        <label>Gender</label>
+
+        <input type="radio" name="gender" value="Male" id="radMale"><label for="radMale">Male</label>
+        <input type="radio" name="gender" value="Female" id="radFemale"><label for="radFemale">Female</label>
+
+        <br>
+
+        <!-- select -->
+        <label for="ddlCountry">Country</label>
+        <select name="country" id="ddlCountry">
+            <option value="" selected disabled>Select Country</option>
+            <option value="100">India</option>
+            <option value="101">China</option>
+            <option value="102">Russia</option>
+            <option value="103">France</option>
+        </select>
+
+        <br>
+        
+        <!-- multi-select -->
+        <label for="ddlHobbies">Hobbies</label>
+        <select name="hobbies" id="ddlHobbies" multiple size="5">
+            <option value="100">Swimming</option>
+            <option value="101">Dancing</option>
+            <option value="102">Singing</option>
+            <option value="103">Drawing</option>
+            <option value="104">Coding</option>
+            <option value="105">Driving</option>
+            <option value="106">Boxing</option>
+        </select>
+
+        <br>
+
+        <!-- file upload -->
+        <label for="file">File</label>
+        <input type="file" name="file" id="file">
+
+        <br>
+
+        <!-- for storing page level info -->
+        <input type="hidden" name="siteName" value="Mumbai">
+
+        <br>
+
+        <!-- text area -->
+        <label for="txtMessage">Message</label>
+        <textarea name="message" id="txtMessage" cols="30" rows="5" placeholder="Enter Message"></textarea>
+
+        <br>
+
+        <!-- input:button -->
+        <!-- <input type="button" value="Button">
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset"> -->
+
+        <br><br>
+
+        <!-- button -->
+        <button type="button">Button</button>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+
+    </form>
+
+</body>
+</html>
+
+<!-- fullName: John Marshal -->

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Table</title>
+
+</head>
+<body>
+    
+    <h1>Table Example</h1>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Salary</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>John Marshal</td>
+                <td>4300</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Allen Green</td>
+                <td>4983</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Smith Wood</td>
+                <td>4948</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="2">Total</th>
+                <td>380</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <br>
+
+    <!-- colspan rowspan -->
+    <table style="width: 100%;" border="1">
+        <tbody>
+            <tr>
+                <td rowspan="4">
+                    <b>Customer</b><br>
+                    John Marshal,<br>
+                    03 Bakers Street, UK
+                </td>
+                <td>Buyer's Order No</td>
+                <td>Dated</td>
+            </tr>
+            <tr>
+                <td>Despatch Document No.</td>
+                <td>Dated</td>
+            </tr>
+            <tr>
+                <td>Despatch Through</td>
+                <td>Destination</td>
+            </tr>
+            <tr>
+                <td colspan="2">Terms of Delivery</td>
+            </tr>
+            <tr>
+                <td colspan="3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas minima provident aliquam ad unde iste perferendis dolor nihil alias praesentium.</td>
+            </tr>
+            <tr>
+                <td>Statistics</td>
+                <td colspan="2">
+                    <table style="width: 100%;" border="1">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Year</th>
+                                <th>Figure</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>2014</td>
+                                <td>47%</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>2015</td>
+                                <td>54%</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>2016</td>
+                                <td>67%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>

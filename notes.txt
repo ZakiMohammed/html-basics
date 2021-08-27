@@ -1,0 +1,81 @@
+http://127.0.0.2:5500/forms.html?fullName=Harry+Potter&password=harry1&email=harry%40mail.com&age=37&search=Bag&math=Math&science=Science&gender=Male&country=100&hobbies=101&hobbies=102&file=imageedit_52_2665107726.png&siteName=Mumbai&message=Hello+World
+
+http://127.0.0.2:5500/forms.html
+
+?
+fullName=Harry+Potter&
+password=harry1&
+email=harry%40mail.com&
+age=37&
+search=Bag&
+math=Math&
+science=Science&
+gender=Male&
+country=100&
+hobbies=101&
+hobbies=102&
+file=imageedit_52_2665107726.png&
+siteName=Mumbai&
+message=Hello+World
+
+Query String: 
+	- It is a combination of key and value pair sepearated by &
+	- Example: www.your_domain_name.com?key1=value1&key2=value2&...&keyN=valueN
+	
+Post Back:
+	- Hitting the server after the page is loaded
+	- Using a form submit event Post Back can occur
+	- It submits the form to the server with name and values of all the form input controls
+	
+Forms:
+	- HTTP: 
+		- Hyper Text Trasnfer Protocol
+		- It is use to communicate between client (brower) and server (localhost/your_domain_name.com)
+		- It is stateless protocol
+		- Application layer protocol
+		- It works on the basis of Request and Response
+		- Verbs/Methos: GET, POST, PUT, DELETE, PATCH, OPTIONS, ...
+		- Response Codes: 
+			- 1xx - Infomrative 
+			- 2xx - Success (200, 201)
+			- 3xx - Warning (303)
+			- 4xx - Client Errors (400, 404, 401, 403)
+			- 5xx - Server Errors (500, 502)
+	- Methods (HTTP Methods): 
+		GET:
+			1. Is mostly used to bring data (html, image, js, css) from the server
+			2. It can be use to send/post data to the server, but it can only send the data in the URL as Query String
+				Example: http://127.0.0.2:5500/forms.html?fullName=Harry+Potter&password=harry1
+			3. Disadvantag:
+				- There is limitation on the size of URL thats why you can't send huge amount of data using GET
+				- It expose the data in the URL itself after a post back occurs, sensitive information will be displayed to the user on the URL
+		POST:
+			1. Is mostly used to send/post data to the server
+			2. Advantage:
+				- There is no limitation on the size of data
+				- It dosen't expose data in the URL
+			3. Example:
+				URL:http://127.0.0.2:5500/forms.html
+				Request Body (json, form-data, form-dataencoded, binary):
+				{
+					fullName: 'Harry Potter',
+					...
+				}
+		
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
